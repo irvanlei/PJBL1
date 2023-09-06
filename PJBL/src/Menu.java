@@ -20,7 +20,7 @@ public class Menu {
         floodFill.printMatrix();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o valor para substituir (por exemplo, 2): ");
+        System.out.print("Digite o valor para substituir: ");
         int newValue = scanner.nextInt();
 
         System.out.print("Escolha o método (1 para pilha, 2 para fila): ");
@@ -41,7 +41,7 @@ public class Menu {
 
         floodFill.printMatrix();
 
-        System.out.print("\nDeseja começar de novo? (Digite 's' para sim ou 'n' para não): ");
+        System.out.print("\nDeseja continuar? (Digite 's' para sim ou 'n' para não): ");
         String response = scanner.next().toLowerCase();
         return response.equals("s");
     }
